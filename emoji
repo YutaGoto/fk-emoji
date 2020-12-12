@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "r-fxxk"
+
+class Emoji < Brainfuck
+  inc "🍎" # +
+  dec "🍓" # -
+  opn "🤔" # [
+  cls "😇" # ]
+  nxt "🙆‍♀️" # >
+  prv "🙅" # <
+  put "⚾" # .
+  get "😺" # ,
+end
+
+puts Emoji.new.fuck(ARGF.read)
